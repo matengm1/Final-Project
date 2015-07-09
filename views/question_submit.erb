@@ -1,6 +1,13 @@
-<h1><%= @user_answer.question %></h1><br>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<div class="body_2">
+<h2><%= @user_answer.question %></h2><br>
 
   <form method="POST" action="/answer">
-    <input type="submit" name="yes" value="YES"><br>
-    <input type="submit" name="no" value="NO"><br>
+    <button>
+    <input type="submit" name="yes" value="YES">
+    </button>
+    <button>
+    <input type="submit" name="no" value="NO">
+    </button>
   </form>
+</div>
