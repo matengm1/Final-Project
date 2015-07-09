@@ -13,4 +13,8 @@ class MyApp < Sinatra::Base
     @user_answer = Question.new(params["question"])
     erb :question_submit
   end
+  
+  get '/answer' do
+    erb :submit
+  end
 end
