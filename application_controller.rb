@@ -6,7 +6,7 @@ require_relative './models/submit.rb'
 class MyApp < Sinatra::Base
   
   get '/' do
-    erb :index
+    erb :question
   end
   
   post '/submit' do
