@@ -1,7 +1,7 @@
 require 'bundler'
 Bundler.require
 
-require_relative './models/cat.rb'
+require_relative './models/submit.rb'
 
 class MyApp < Sinatra::Base
   
@@ -9,12 +9,8 @@ class MyApp < Sinatra::Base
     erb :index
   end
   
-  get '/cat' do
-    erb :cat
-  end
-  
-  post '/cats' do
-    @users_cat = Cat.new(params["name"], params["breed"], params["age"])
-    erb :cats
+  post '/submit' do
+    @user_answer = Question.new(params["question"])
+    erb :submit
   end
 end
