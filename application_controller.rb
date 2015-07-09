@@ -6,11 +6,11 @@ require_relative './models/submit.rb'
 class MyApp < Sinatra::Base
   
   get '/' do
-    erb :question
+    erb :question_ask
   end
   
   post '/submit' do
     @user_answer = Question.new(params["question"])
-    erb :submit
+    erb :question_submit
   end
 end
