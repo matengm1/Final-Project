@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Settle</title>
+  </head>
+  
+  <body>
+    <h1><%= @answer_yes.to_s %> said yes</h1><br>
+    <h1><%= @answer_no.to_s %> said no</h1><br>
+    <h1><%= if @answer_yes > @answer_no
+              "Yes won by " + (@answer_yes - @answer_no).to_s + " votes!"
+            elsif @answer_no > @answer_yes
+              "No won by " + (@answer_no - @answer_yes) + " votes!"
+            else
+              "The vote was a tie!" %></h1>
+  </body>
+</html>
