@@ -10,7 +10,7 @@
       <h2><%= @user_answer.question %></h2><br>
       <form method="POST" action="/yes">
         YES
-          <INPUT TYPE=radio NAME="answer" VALUE="YES" UNCHECKED>
+        <INPUT TYPE=radio NAME="answer" VALUE=<%= @user_answer.add_yes %> UNCHECKED>
           <input type="submit">
       </form>
         
@@ -19,8 +19,55 @@
           <INPUT TYPE=radio NAME="answer" VALUE="NO" UNCHECKED>
           <input type="submit">
       </form>
-      
         
+            <form method="POST" action="/yes">
+        YES
+        <INPUT TYPE=radio NAME="answer" VALUE=<%= @user_answer.add_yes %> UNCHECKED>
+          <input type="submit">
+      </form>
+        
+      <form method="POST" action="/no">
+        NO
+          <INPUT TYPE=radio NAME="answer" VALUE="NO" UNCHECKED>
+          <input type="submit">
+      </form>
+        
+            <form method="POST" action="/yes">
+        YES
+        <INPUT TYPE=radio NAME="answer" VALUE=<%= @user_answer.add_yes %> UNCHECKED>
+          <input type="submit">
+      </form>
+        
+      <form method="POST" action="/no">
+        NO
+          <INPUT TYPE=radio NAME="answer" VALUE="NO" UNCHECKED>
+          <input type="submit">
+      </form>
+        
+            <form method="POST" action="/yes">
+        YES
+        <INPUT TYPE=radio NAME="answer" VALUE=<%= @user_answer.add_yes %> UNCHECKED>
+          <input type="submit">
+      </form>
+        
+      <form method="POST" action="/no">
+        NO
+          <INPUT TYPE=radio NAME="answer" VALUE="NO" UNCHECKED>
+          <input type="submit">
+      </form>
+        
+            <form method="POST" action="/yes">
+        YES
+        <INPUT TYPE=radio NAME="answer" VALUE=<%= @user_answer.add_yes %> UNCHECKED>
+          <input type="submit">
+      </form>
+        
+      <form method="POST" action="/no">
+        NO
+          <INPUT TYPE=radio NAME="answer" VALUE="NO" UNCHECKED>
+          <input type="submit">
+      </form>
+                
       <form method="POST" action="/answer">
         <button>
         <input type="submit" name="end" value="end">
