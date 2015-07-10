@@ -14,7 +14,11 @@ class MyApp < Sinatra::Base
     erb :question_submit
   end
   
-  get '/answer' do
-    erb :submit
+  post '/yes' do
+    binding.pry
+    erb :question_submit
+  end
+  post '/no' do
+    erb :question_submit
   end
 end
